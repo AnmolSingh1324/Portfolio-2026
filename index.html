@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ANMOL SINGH — Software Developer // Full-Stack Engineer</title>
+<meta name="description" content="Anmol Singh — Software Developer, Full-Stack Engineer & MCA student. Cinematic interactive portfolio." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+<!-- Styles -->
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="locked">
+
+<!-- BACKGROUND -->
+<canvas id="bg"></canvas>
+<div class="grain"></div>
+<div class="vignette"></div>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-ring"></div>
+<div class="cursor-dot"></div>
+
+<!-- PROGRESS TRACK -->
+<nav class="track" id="track">
+  <div class="t" data-i="0"><span class="lbl">Identity</span><span class="ln"></span></div>
+  <div class="t" data-i="1"><span class="lbl">Matrix</span><span class="ln"></span></div>
+  <div class="t" data-i="2"><span class="lbl">Deploy</span><span class="ln"></span></div>
+  <div class="t" data-i="3"><span class="lbl">Credentials</span><span class="ln"></span></div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section id="hero">
+  <div class="status"><span class="dot"></span> [ SYSTEM STATUS: ONLINE ]</div>
+  <div class="hero-meta">PORTFOLIO // v2.6 — 2026</div>
+
+  <div class="hero-core">
+    <div class="hero-eyebrow" data-anim="eyebrow">Full-Stack Engineer / Creative Developer</div>
+    <h1 class="hero-name" id="heroName" aria-label="Anmol Singh">
+      <span class="seg" data-word="ANMOL"></span>
+      <span class="seg" data-word="SINGH"></span>
+    </h1>
+    <div class="hero-ticker" id="ticker"></div>
+    <button class="init-btn" id="initBtn" data-cursor>
+      <span>INITIALIZE SYSTEM <span class="arr">&rarr;</span></span>
+    </button>
+  </div>
+
+  <div class="scroll-cue" id="cue">SCROLL TO TRAVERSE</div>
+</section>
+
+<!-- ===================== MAIN ===================== -->
+<div id="main">
+
+  <!-- VIEW 1 — IDENTITY CORE -->
+  <section class="view" id="view1" data-mode="grid">
+    <div class="shell">
+      <div class="view-index reveal">VIEW 01 — IDENTITY CORE</div>
+      <div class="identity-grid">
+        <div class="id-left">
+          <figure class="portrait reveal" data-cursor>
+            <div class="ph-frame" id="phFrame">
+              <img id="meImg" src="profile.jpg" alt="Anmol Singh — Software Developer" />
+              <div class="ph-fallback">AS</div>
+              <span class="ph-scan"></span>
+              <span class="br tl"></span><span class="br tr"></span>
+              <span class="br bl"></span><span class="br br2"></span>
+            </div>
+            <figcaption>
+              <span>ID://ANMOL_SINGH.IMG</span>
+              <span class="ph-live"><i></i> LIVE FEED</span>
+            </figcaption>
+          </figure>
+          <h2 class="section-title split">About</h2>
+          <p class="bio reveal">
+            Hello! I'm <b>Anmol Singh</b>, a passionate Software Developer and MCA student at
+            <b>Amity University</b>. I specialize in building efficient, scalable, and user-friendly
+            web applications, continuously exploring the intersection of <b>full-stack engineering</b>,
+            <b>cloud deployment</b>, and <b>AI systems</b>.
+          </p>
+        </div>
+        <div>
+          <div class="kicker reveal">// ACADEMIC NODES</div>
+          <div class="timeline">
+            <div class="node reveal">
+              <div class="yr">2024 — 2026</div>
+              <h3>Master of Computer Applications</h3>
+              <div class="inst">Amity University, Greater Noida</div>
+              <div class="meta"><span>DEGREE / <b>MCA</b></span><span>CGPA / <b>8.53</b></span></div>
+            </div>
+            <div class="node reveal">
+              <div class="yr">2021 — 2024</div>
+              <h3>Bachelor of Computer Applications</h3>
+              <div class="inst">Regional College, Bareilly</div>
+              <div class="meta"><span>DEGREE / <b>BCA</b></span><span>SCORE / <b>60.86%</b></span></div>
+            </div>
+            <div class="node reveal">
+              <div class="yr">2020 — 2021</div>
+              <h3>Senior Secondary [Science]</h3>
+              <div class="inst">N.I.O.S. Bareilly</div>
+              <div class="meta"><span>BOARD / <b>NIOS</b></span><span>SCORE / <b>71.16%</b></span></div>
+            </div>
+            <div class="node reveal">
+              <div class="yr">2019 — 2020</div>
+              <h3>Secondary Education</h3>
+              <div class="inst">N.I.O.S. Bareilly</div>
+              <div class="meta"><span>BOARD / <b>NIOS</b></span><span>SCORE / <b>61.16%</b></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIEW 2 — THE MATRIX -->
+  <section class="view" id="view2" data-mode="stream">
+    <div class="shell">
+      <div class="view-index reveal">VIEW 02 — THE MATRIX</div>
+      <div class="kicker reveal">// TECHNICAL SKILL STACK</div>
+      <h2 class="section-title split">Capabilities</h2>
+      <div class="pods">
+        <div class="pod" data-cursor>
+          <div class="pid">POD_01</div>
+          <h4>Frontend Engine</h4>
+          <div class="chips">
+            <span class="chip">JavaScript</span><span class="chip">HTML5</span>
+            <span class="chip">CSS3</span><span class="chip">React.js</span>
+          </div>
+        </div>
+        <div class="pod" data-cursor>
+          <div class="pid">POD_02</div>
+          <h4>Backend Frameworks</h4>
+          <div class="chips">
+            <span class="chip">Spring Boot</span><span class="chip">Spring Security</span>
+            <span class="chip">Spring Data JPA</span><span class="chip">RESTful APIs</span>
+          </div>
+        </div>
+        <div class="pod" data-cursor>
+          <div class="pid">POD_03</div>
+          <h4>Databases &amp; Tools</h4>
+          <div class="chips">
+            <span class="chip">MySQL</span><span class="chip">Docker</span>
+            <span class="chip">Git</span><span class="chip">VS Code</span>
+          </div>
+        </div>
+        <div class="pod" data-cursor>
+          <div class="pid">POD_04</div>
+          <h4>Architecture &amp; Concepts</h4>
+          <div class="chips">
+            <span class="chip">OOPS</span><span class="chip">MVC Architecture</span>
+            <span class="chip">Auth &amp; Authorization</span><span class="chip">Cloud (AWS/Firebase)</span>
+            <span class="chip">AI/ML Integration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIEW 3 — FLAGSHIP DEPLOYMENT -->
+  <section class="view" id="view3" data-mode="orbit">
+    <div class="shell">
+      <div class="view-index reveal">VIEW 03 — FLAGSHIP DEPLOYMENT</div>
+      <div class="flagship">
+        <div class="glow"></div>
+        <span class="flag-tag reveal">[ FULL-STACK DEVELOPMENT // CLOUD DEPLOYMENT ]</span>
+        <h2 class="flag-title split">AI-Powered Job Recruitment Portal</h2>
+        <p class="flag-desc reveal">
+          A sophisticated, scalable talent acquisition platform leveraging a high-performance
+          React.js frontend interface interconnected with intelligent Python backend logic.
+          Completely optimized for modern cloud ecosystems, demonstrating advanced principles of
+          cloud hosting, basic DevOps, and secure production architectures.
+        </p>
+        <div class="flag-stack reveal">
+          <span>React.js</span><span>Python</span><span>REST APIs</span>
+          <span>Cloud Hosting</span><span>DevOps</span><span>Secure Architecture</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIEW 4 — CREDENTIAL MATRIX -->
+  <section class="view" id="view4" data-mode="wave">
+    <div class="shell">
+      <div class="view-index reveal">VIEW 04 — CREDENTIAL MATRIX</div>
+      <div class="kicker reveal">// CERTIFICATIONS &amp; EXPERIENCE</div>
+      <h2 class="section-title split">Credentials</h2>
+      <div class="cred-grid">
+        <div class="cred" data-cursor>
+          <div class="vline"></div>
+          <span class="verify">VERIFIED</span>
+          <div class="cid">CRED_01</div>
+          <h4>AI Intern</h4>
+          <div class="org">Codtech IT Solutions — Hyderabad / Remote · May – Jun 2025</div>
+          <p>Focused on artificial intelligence implementation and dedication to complex technical tasks.</p>
+        </div>
+        <div class="cred" data-cursor>
+          <div class="vline"></div>
+          <span class="verify">VERIFIED</span>
+          <div class="cid">CRED_02</div>
+          <h4>AI Intern</h4>
+          <div class="org">CodSoft — Virtual · May – Jun 2025</div>
+          <p>Contributed to multi-tiered, data-driven AI projects with excellent technical execution.</p>
+        </div>
+        <div class="cred" data-cursor>
+          <div class="vline"></div>
+          <span class="verify">VERIFIED</span>
+          <div class="cid">CRED_03</div>
+          <h4>Adobe Marketing Specialist</h4>
+          <div class="org">Coursera &amp; Adobe — Jan 2026</div>
+          <p>Specialization in Generative AI Content Creation, Design Fundamentals, and data-driven strategy.</p>
+        </div>
+        <div class="cred" data-cursor>
+          <div class="vline"></div>
+          <span class="verify">VERIFIED</span>
+          <div class="cid">CRED_04</div>
+          <h4>Digital 101 Journey</h4>
+          <div class="org">FutureSkills Prime — NASSCOM &amp; MeitY · Feb 2025</div>
+          <p>Verified industry digital fluency standard (AICTE &amp; IT-ITES).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TERMINAL FOOTER -->
+  <footer>
+    <div class="shell">
+      <div class="term">
+        <div class="term-bar">
+          <span class="dt"></span><span class="dt"></span><span class="dt g"></span>
+          &nbsp; anmol@portfolio: ~ /contact
+        </div>
+        <div class="term-body">
+          <div><span class="pmt">&gt;</span> establishing connection<span id="blink">_</span></div>
+          <div><span class="pmt">&gt;</span> github &nbsp;&nbsp;→ <a class="term-link" data-cursor href="https://github.com/AnmolSingh1324" target="_blank" rel="noopener">github.com/AnmolSingh1324</a></div>
+          <div><span class="pmt">&gt;</span> linkedin →
+            <a class="term-link" data-cursor href="https://www.linkedin.com/in/anmol-singh-1169852b4/" target="_blank" rel="noopener">linkedin.com/in/anmol-singh-1169852b4</a></div>
+          <div><span class="pmt">&gt;</span> email &nbsp;&nbsp;→
+            <a class="term-link" data-cursor href="mailto:anmolsingh21148@gmail.com">anmolsingh21148@gmail.com</a></div>
+          <div><span class="pmt">&gt;</span> status &nbsp;→ <span style="color:var(--lime)">OPEN TO OPPORTUNITIES</span></div>
+        </div>
+      </div>
+      <div class="term-foot">
+        <center><span class="dt"></span><span class="dt"></span><span class="dt g"></span>
+          &nbsp; anmol@portfolio
+        </center>
+        <span> ANMOL SINGH - 2026</span>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /main -->
+
+<!-- ===================== LIBS ===================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- ===================== APP SCRIPT ===================== -->
+<script src="script.js"></script>
+</body>
+</html>
